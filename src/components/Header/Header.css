@@ -1,0 +1,33 @@
+@import '../../cssVariables.css';
+
+header{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: var(--sombra);
+    position:relative
+}
+
+header.claro{
+    background-image: var(--gradienteClaro);
+    color: var(--textoClaro);
+}
+
+header.oscuro{
+    background-image: var(--gradienteOscuro);
+    color: var(--textoOscuro);
+}
+
+.icono{
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+}
+
+.icono.oscuro{
+    color: #D9D951;
+}

@@ -1,0 +1,17 @@
+@import './cssVariables.css';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body.claro{
+    background-color: var(--fondoClaro);
+    color: var(--textoClaro);
+}
+
+body.oscuro{
+    background-color: var(--fondoOscuro);
+    color: var(--textoOscuro);
+}

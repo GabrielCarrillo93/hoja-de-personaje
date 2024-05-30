@@ -1,0 +1,11 @@
+:root{
+    --fondoClaro: #ECE9E3;
+    --fondoOscuro: #040222;
+    --gradienteClaro: linear-gradient(160deg, #9D9369 33%, #8C8258 50%, #746B48 100%);
+    --gradienteOscuro: linear-gradient(160deg, #271766 33%, #1B0F49 50%, #150B3E 100%);
+    --sombra: 0 1px 3px 2px rgba(0, 0, 0, 0.25);
+    --textoClaro: #2B2B1F;
+    --textoOscuro: #FFF9F9;
+    --fondoDivsClaro: #CAC8C2;
+    --fondoDivsOscuro: 606D8E;
+}
