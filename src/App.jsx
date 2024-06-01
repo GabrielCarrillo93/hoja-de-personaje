@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import { themeContext } from './ThemeContext'
 import Header from './components/Header/Header'
+import Info from './components/Info/Info'
 
 function App() {
     const [tema, setTema] = useState("claro")
@@ -16,6 +17,9 @@ function App() {
         <>
             <themeContext.Provider value={[tema, setTema]}>
                 <Header/>
+                <main>
+                    <Info />
+                </main>
             </themeContext.Provider>
         </>
     )

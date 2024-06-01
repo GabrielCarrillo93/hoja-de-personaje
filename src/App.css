@@ -1,4 +1,4 @@
-@import './cssVariables.css';
+@import url('./cssVariables.css');
 
 *{
     box-sizing: border-box;
@@ -14,4 +14,21 @@ body.claro{
 body.oscuro{
     background-color: var(--fondoOscuro);
     color: var(--textoOscuro);
+}
+
+main{
+    padding: 16px;
+}
+
+section{
+    box-shadow: var(--sombra);
+    border-radius: 8px;
+}
+
+section.claro{
+    background-image: var(--gradienteClaro);
+}
+
+section.oscuro{
+    background-image: var(--gradienteOscuro);
 }

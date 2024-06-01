@@ -1,0 +1,68 @@
+.info{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.infobox{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+}
+
+.infobox>label{
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.infobox>label, .infobox>input, .infobox>select{
+    font-size: 18px;
+}
+
+.infobox>input, .infobox>select{
+    padding: 4px;
+    text-align: center;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+}
+
+.infobox.claro>input, .infobox.claro>select{
+    background-color: var(--fondoDivsClaro);
+    color: var(--textoClaro);
+}
+
+.infobox.oscuro>input, .infobox.oscuro>select{
+    background-color: var(--fondoDivsOscuro);
+    color: var(--textoOscuro);
+}
+
+
+@media screen and (834px >= width >= 480px) {
+    .info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .infobox{
+        grid-template-columns: 40% 60%;
+    }
+
+    .infobox>label, .infobox>input, .infobox>select{
+        font-size: 20px;
+    }
+}
+
+@media screen and (835px <= width) {
+    .info{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .infobox>label, .infobox>input, .infobox>select{
+        font-size: 16px;
+    }
+}
