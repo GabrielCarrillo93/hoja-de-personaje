@@ -1,0 +1,97 @@
+.vida{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px;
+    gap: 16px;
+}
+
+.vidabox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vidainput{
+    width: 100%;
+    padding: 16px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    min-height: 100px;
+}
+
+.vidainput.claro{
+    background-color: var(--fondoDivsClaro);
+}
+
+.vidainput.oscuro{
+    background-color: var(--fondoDivsOscuro);
+}
+
+.vidainput span{
+    font-size: 36px;
+}
+
+.columna{
+    flex-direction: column;
+    width: 100%;
+}
+
+.vidainput input{
+    width: 100%;
+    padding: 8px;
+    font-size: 36px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.vidainput.claro input{
+    background-color: var(--fondoDivsClaro);
+    color: var(--textoClaro);
+    
+}
+
+.vidainput.oscuro input{
+    background-color: var(--fondoDivsOscuro);
+    color: var(--textoOscuro);
+}
+
+.salvacion{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon.oscuro{
+    color: var(--textoClaro);
+}
+
+
+input[type=checkbox]{
+    -ms-transform: scale(2);
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    outline: none;
+    margin-inline: 8px;
+}
+
+@media screen and (480px < width <= 834px) {
+    .vida{
+        grid-column: span 2;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (width > 834px){
+    .vida{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

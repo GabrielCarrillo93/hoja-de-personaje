@@ -4,18 +4,19 @@ import { Icon } from "@iconify/react/dist/iconify.js"
 import './Header.css'
 
 const Header = () => {
-    const tema = useContext(themeContext)
+    const [tema, setTema] = useContext(themeContext)
     return (
-        <header className={tema[0]}>
+        <header className={tema}>
             <h1>Hoja de personaje</h1>
             <Icon 
-                className={`icono ${tema[0]}`}
-                icon={tema[0] === "claro" ? "material-symbols:dark-mode" : "material-symbols:light-mode" }
+                className={`icono ${tema}`}
+                icon={tema === "claro" ? "material-symbols:dark-mode" : "material-symbols:light-mode" }
                 style={{ fontSize: '32px' }}
                 onClick={() => {
-                    tema[1](tema[0] === "claro" ? "oscuro" : "claro")
+                    setTema(tema === "claro" ? "oscuro" : "claro")
                 }}/> 
         </header>
     )
 }
+
 export default Header

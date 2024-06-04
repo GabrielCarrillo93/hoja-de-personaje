@@ -3,6 +3,8 @@ import './App.css'
 import { themeContext } from './ThemeContext'
 import Header from './components/Header/Header'
 import Info from './components/Info/Info'
+import StatBlock from './components/StatBlock/StatBlock'
+import Vida from './components/Vida/Vida'
 
 function App() {
     const [tema, setTema] = useState("claro")
@@ -19,6 +21,8 @@ function App() {
                 <Header/>
                 <main>
                     <Info />
+                    <StatBlock />
+                    <Vida />
                 </main>
             </themeContext.Provider>
         </>

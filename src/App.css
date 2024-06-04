@@ -18,6 +18,9 @@ body.oscuro{
 
 main{
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 section{
@@ -31,4 +34,11 @@ section.claro{
 
 section.oscuro{
     background-image: var(--gradienteOscuro);
+}
+
+@media screen and (width > 480px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

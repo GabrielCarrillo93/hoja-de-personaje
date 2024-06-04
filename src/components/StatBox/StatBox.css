@@ -1,0 +1,60 @@
+.statbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.statbox h3{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.statbox input{
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.mod{
+    border: 1px solid black;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    position: relative;
+    border-radius: 8px;
+}
+
+.mod.claro, .base.claro, .mod.claro input{
+    background-color: var(--fondoDivsClaro);
+    color: var(--textoClaro);
+}
+
+.mod.oscuro, .base.oscuro, .mod.oscuro input{
+    background-color: var(--fondoDivsOscuro);
+    color: var(--textoOscuro);
+}
+
+.mod input{
+    width: 80%;
+    font-size: 48px;
+    align-self: center;
+}
+
+
+.base{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 8px;
+    padding: 4px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.base input{
+    font-size: 18px;
+    font-weight: 700;
+}

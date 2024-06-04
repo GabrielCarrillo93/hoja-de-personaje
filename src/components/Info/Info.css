@@ -43,6 +43,7 @@
 
 @media screen and (834px >= width >= 480px) {
     .info{
+        grid-column: span 2;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -58,6 +59,7 @@
 
 @media screen and (835px <= width) {
     .info{
+        grid-column: span 2;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }

@@ -1,0 +1,20 @@
+.statblock{
+    padding: 16px 16px 24px 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+@media screen and (480px < width <= 834px) {
+    .statblock{
+        grid-column: span 2;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (width > 834px){
+    .statblock{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
